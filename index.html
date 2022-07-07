@@ -34,20 +34,24 @@
   </head>
   <body>
     <header>
-   
-    <div class="header-img"></div>
+    <div class="header-img">
             <img src="images/logo.svg" class="logo-image" />
-      <nav>
-        <ul>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Services">Services</a></li>
-          <li><a href="#Project">Projects</a></li>
+      <nav class="navbar">
+        <div class="navbar_toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="navbar_menu">
+          <li><a href="#About" class="nav_links">About</a></li>
+          <li><a href="#Services" class="nav_links">Contact</a></li>
+          <li ><a href="#Projects" class="nav_links">Blog</a></li>
           <button>CONTACT</button>
-        </ul>
+        </div>
       </nav>
-
       <h1>WE ARE CREATIVES</h1>
     <!--  <img src="images/icon-arrow-down.svg" class="arrow" /> -->
+  </div>
     </header>
     <div class="clearfix"></div>
     <!--First Section-->
@@ -186,5 +190,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Kalenna Codes</a>.
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
