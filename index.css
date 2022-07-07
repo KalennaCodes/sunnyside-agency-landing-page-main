@@ -45,7 +45,7 @@ header {
 .header-img {
   background-image: url("images/mobile/image-header.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   min-height: 105vh;
 }
@@ -55,17 +55,8 @@ h1 {
   font-family: "Fraunces", serif;
   position: absolute;
   top: 30%;
-  left: 25%;
+  left: 5%;
   /*transform: translate(-50%, -50%);*/
-  text-align: center;
-}
-
-.arrow {
-  color: white;
-  position: absolute;
-  top: 42%;
-  left: 42%;
-  height: 140px;
   text-align: center;
 }
 
@@ -259,6 +250,10 @@ button {
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
+  h1 {
+    top: 30%;
+    left: 25%;
+   }
 }
 
 /* large tablets and laptop styles*/
@@ -275,7 +270,7 @@ button {
   .header-img {
     background-image: url("images/desktop/image-header.jpg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
 
   }
