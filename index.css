@@ -32,7 +32,7 @@
 
 .logo-image {
   position: absolute;
-  top: 1%;
+  top: 2%;
   left: 5%;
 }
 
@@ -64,31 +64,33 @@ h1 {
   text-align: center;
 }
 
-/* nav section 
+/* NAV SECTION */
 .navbar {
   height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-}*/
-.navbar {
-position: absolute;
-top: 8px;
-right: 50px;
-display: inline;
 }
+
 .navbar_menu {
   display: flex;
   
 }
 
 .nav_links {
-  display: inline;
-  font-family: "Barlow", sans-serif;
-  padding-right: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 0rem 1rem;
 }
 
+.nav_links:hover {
+  color: orange;
+}
+
+.btn-nav {
+  margin-right: 3%;
+}
 /* MOBILE NAV SECTION */
 @media screen and (max-width: 780px) {
   body.active {
@@ -100,7 +102,10 @@ display: inline;
       align-items: center;
       justify-content: center;
   }
- 
+  .btn-nav {
+      display: none;
+  }
+
   .navbar_menu {
       display: grid;
       grid-template-columns: 1fr;
@@ -116,7 +121,7 @@ display: inline;
       z-index: 99;
       height: 100vh;
       font-size: 1.5rem;
-      background: var(--darkBlue);
+      background: rgb(227, 227, 108);
   }
 
   .navbar_toggle .bar {
@@ -144,7 +149,6 @@ display: inline;
       transform: translateY(-8px) rotate(-45deg);
   }
 }
-
 /* first section */
 
 .sec-1 {
@@ -281,6 +285,7 @@ footer li {
 }
 footer a {
   color: hsl(168, 34%, 41%);
+  font-size: 18px;
 }
 
 .socials {
