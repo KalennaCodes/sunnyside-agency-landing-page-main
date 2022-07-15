@@ -20,16 +20,6 @@
   clear: both;
 }
 
-/* base styles */
-
-/* layout 
-.background-image {
-  max-width: 100%;
-  position: relative;
-  text-align: center;
-  margin-bottom: -4px;
-}*/
-
 .logo-image {
   position: absolute;
   top: 2%;
@@ -40,11 +30,7 @@ li {
   list-style: none;
 }
 
-/* header section 
-
-header {
-  position: relative;
-}*/
+/* header section */
 
 .header-img {
   background-image: url("images/mobile/image-header.jpg");
@@ -75,7 +61,7 @@ h1 {
 
 .navbar_menu {
   display: flex;
-  
+  margin-right: 15px;
 }
 
 .nav_links {
@@ -89,7 +75,14 @@ h1 {
 }
 
 .btn-nav {
-  margin-right: 3%;
+  margin-right: 5%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-nav:hover {
+  background-color: orange;
+  color: white;
 }
 /* MOBILE NAV SECTION */
 @media screen and (max-width: 780px) {
@@ -104,6 +97,7 @@ h1 {
   }
   .btn-nav {
       display: none;
+
   }
 
   .navbar_menu {
@@ -117,9 +111,8 @@ h1 {
 
   .navbar_menu.active {
       top: 100%;
-      opacity: 1;
       z-index: 99;
-      height: 100vh;
+      padding-top: 20px;
       font-size: 1.5rem;
       background: rgb(227, 227, 108);
   }
@@ -193,7 +186,7 @@ h1 {
   background-image: url("images/mobile/image-graphic-design.jpg");
   position: relative;
   
-  min-height: 65vh;
+  min-height: 85vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -205,6 +198,7 @@ h1 {
   position: absolute;
   bottom: 8px;
   left: 5%;
+  right: 5%;
   margin-bottom: 5%;
 }
 
@@ -213,19 +207,16 @@ h1 {
 }
 .skills p {
   font-family: "Barlow", sans-serif;
+  color: hsl(198, 62%, 26%);
 }
 .photography {
   background-image: url("images/mobile/image-photography.jpg");
   position: relative;
   
-  min-height: 65vh;
+  min-height: 85vh;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.photography .skills p {
-  color: hsl(198, 62%, 26%);
-  
+  background-position: center center;
 }
 
 /* Fourth Section Client testimonials */
@@ -281,11 +272,15 @@ footer {
   padding: 5% 0;
 }
 footer li {
-  padding: 0 8%;
+  padding: 5px;
 }
 footer a {
   color: hsl(168, 34%, 41%);
   font-size: 18px;
+}
+
+footer a:hover {
+  color: orange;
 }
 
 .socials {
