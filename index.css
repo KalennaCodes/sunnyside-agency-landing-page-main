@@ -20,6 +20,29 @@
   clear: both;
 }
 
+/* font */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", serif;
+}
+p {
+  line-height: 1.5em;
+}
+
+/* button/icons */
+
+button {
+  color: black;
+  background-color: white;
+  border: none;
+  height: 30px;
+  padding: 0 15px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
 .logo-image {
   position: absolute;
   top: 2%;
@@ -65,7 +88,7 @@ h1 {
 }
 
 .nav_links {
-  color: hsl(210, 4%, 67%);
+  color: white;
   text-decoration: none;
   padding: 0rem 1rem;
   font-family: "Barlow", sans-serif;
@@ -294,31 +317,7 @@ footer a:hover {
 .socials img {
     padding-right: 7%;
 }
-/* font */
-a {
-  color: white;
-}
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Fraunces", serif;
-}
-p {
-  line-height: 1.5em;
-}
 
-/* button/icons */
-
-button {
-  color: black;
-  background-color: white;
-  border: none;
-  height: 30px;
-  padding: 0 15px;
-  border-radius: 20px;
-  font-size: 13px;
-}
 .learn-more {
   color: black;
 }
@@ -330,7 +329,6 @@ button {
 /* large tablets and laptop styles*/
 @media screen and (min-width: 751px) {
    
-
  .header-img {
     background-image: url("images/desktop/image-header.jpg");
     background-repeat: no-repeat;
